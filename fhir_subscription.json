@@ -1,0 +1,39 @@
+{
+  "resourceType": "Subscription",
+  "status": "requested",
+  "topic": "http://hl7.org/fhir/SubscriptionTopic/document",
+  "contact": [
+    {
+      "system": "email",
+      "value": "admin@example.com"
+    }
+  ],
+  "reason": "Trigger a webhook when a new document is added",
+  "filterBy": [
+    {
+      "resource": "DocumentReference",
+      "filterParameter": "type",
+      "comparator": "eq",
+      "value": "http://hl7.org/fhir/document-reference-type|clinical-note"
+    }
+  ],
+  "channelType": {
+    "system": "http://terminology.hl7.org/CodeSystem/subscription-channel-type",
+    "code": "rest-hook"
+  },
+  "endpoint": "https://your-web-server.com/fhir-webhook",
+  "parameter": [
+    {
+      "name": "patient",
+      "value": "${resource.patient.reference}"
+    },
+    {
+      "name": "documentReference",
+      "value": "${resource.url}"
+    },
+    {
+      "name": "authToken",
+      "value": "${context.auth.token}"
+    }
+  ]
+}
