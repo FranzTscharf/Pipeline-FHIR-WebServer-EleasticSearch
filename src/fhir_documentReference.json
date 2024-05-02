@@ -1,0 +1,188 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "625576",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-02-24T12:23:57.892+00:00",
+    "source": "#KjyFwXXzsrEgaaBS"
+  },
+  "contained": [ {
+    "resourceType": "Patient",
+    "id": "patient",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">GIOVANNI <b>D'ERRICO </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>TSTTTN80A01L057Q</td></tr><tr><td>Address</td><td><span>Via Milano </span><br/><span>VENEZIA </span><span>VE </span><span>ITA </span></td></tr><tr><td>Date of birth</td><td><span>09 October 1973</span></td></tr></tbody></table></div>"
+    },
+    "identifier": [ {
+      "use": "official",
+      "system": "2.16.840.1.113883.2.9.4.3.2",
+      "value": "TSTTTN80A01L057Q"
+    } ],
+    "active": true,
+    "name": [ {
+      "use": "official",
+      "family": "D'ERRICO",
+      "given": [ "GIOVANNI" ]
+    } ],
+    "gender": "male",
+    "birthDate": "1973-10-09",
+    "address": [ {
+      "use": "home",
+      "line": [ "Via Milano" ],
+      "city": "VENEZIA",
+      "state": "VE",
+      "postalCode": "30100",
+      "country": "ITA"
+    }, {
+      "use": "temp",
+      "city": "VENEZIA",
+      "state": "VE",
+      "postalCode": "027042",
+      "country": "ITA"
+    } ],
+    "communication": [ {
+      "language": {
+        "coding": [ {
+          "system": "urn:ietf:bcp:47",
+          "code": "ca",
+          "display": "Catalan"
+        } ]
+      },
+      "preferred": true
+    }, {
+      "language": {
+        "coding": [ {
+          "system": "urn:ietf:bcp:47",
+          "code": "es",
+          "display": "Spanish"
+        } ]
+      }
+    } ]
+  }, {
+    "resourceType": "Practitioner",
+    "id": "author",
+    "identifier": [ {
+      "system": "2.16.840.1.113883.2.9.4.3.2",
+      "value": "BCCFNC56M18F839J"
+    } ],
+    "name": [ {
+      "family": "ANDREATTA",
+      "given": [ "ROBERTO" ]
+    } ],
+    "telecom": [ {
+      "system": "phone",
+      "value": "0554222442",
+      "use": "home"
+    }, {
+      "system": "email",
+      "value": "prova@eng.it",
+      "use": "home"
+    } ]
+  }, {
+    "resourceType": "Organization",
+    "id": "organization",
+    "identifier": [ {
+      "system": "2.16.840.1.113883.2.9.4.1.3",
+      "value": "140201"
+    } ],
+    "name": "ASREM"
+  } ],
+  "masterIdentifier": {
+    "system": "urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab",
+    "value": "2.16.840.1.113883.2.9.2.140.4.4^23016"
+  },
+  "identifier": [ {
+    "use": "official",
+    "type": {
+      "text": "EntryUUID"
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:ab99e8a7-283d-44ce-8e40-2efefc6ed5ah"
+  } ],
+  "status": "current",
+  "type": {
+    "coding": [ {
+      "system": "2.16.840.1.113883.6.1",
+      "code": "29304-3",
+      "display": "Prestazione farmaceutica"
+    } ]
+  },
+  "category": [ {
+    "coding": [ {
+      "system": "2.16.840.1.113889.2.9.3.3.6.1.5",
+      "code": "PRE",
+      "display": "Prestazioni"
+    } ]
+  } ],
+  "subject": {
+    "reference": "#patient"
+  },
+  "date": "2019-04-09T10:58:18.365+02:00",
+  "author": [ {
+    "reference": "#author"
+  }, {
+    "reference": "#organization"
+  } ],
+  "description": "A description of this document",
+  "securityLabel": [ {
+    "coding": [ {
+      "system": "http://hl7.org/fhir/v3/Confidentiality",
+      "code": "N",
+      "display": "normal"
+    } ]
+  } ],
+  "content": [ {
+    "attachment": {
+      "extension": [ {
+        "url": "http://cct.eng.it/FHIR/schema/repositoryUniqueId",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://cct.eng.it/FHIR/schema/repositoryUniqueId",
+            "code": "2.16.840.1.113883.2.9.2.140.4.5.1"
+          } ],
+          "text": "UniqueId Repository"
+        }
+      } ],
+      "contentType": "text/x-cda-r2+xml",
+      "language": "it-IT",
+      "url": "Binary/ae565329-9764-404b-96b9-f4f7e5174538",
+      "size": 43548,
+      "hash": "XqXV96KjLbdDdQAmp5qqOBM5fow=",
+      "title": "mi documento"
+    },
+    "format": {
+      "code": "PDF",
+      "display": "PDF"
+    }
+  } ],
+  "context": {
+    "event": [ {
+      "coding": [ {
+        "system": "2.16.840.1.113883.2.9.3.3.6.1.3",
+        "code": "P1",
+        "display": "Consenso alla alimentazione del FSEr"
+      } ]
+    } ],
+    "period": {
+      "start": "2004-12-23T08:00:00+10:00",
+      "end": "2004-12-23T08:01:00+10:00"
+    },
+    "facilityType": {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "Ospedale",
+        "display": "Ospedale"
+      } ]
+    },
+    "practiceSetting": {
+      "coding": [ {
+        "system": "2.16.840.1.113883.2.9.3.3.6.1.2",
+        "code": "AD_PSC001",
+        "display": "Allergologia"
+      } ]
+    },
+    "sourcePatientInfo": {
+      "reference": "#patient"
+    }
+  }
+}
